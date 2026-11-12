@@ -1192,7 +1192,7 @@
               <p style="margin:0 0 6px;display:flex;justify-content:space-between;font-size:13px;font-weight:700;color:#475569;padding:0 10px">웹솔루션<span>02</span></p>
               <ul style="list-style:none;margin:0;padding:0">
                 
-                  <li data-k="veryflower">
+                  <li data-k="veryflower" class="is-on">
                     <span class="sw-on">
                       <button type="button" aria-current="true" data-pick="veryflower" title="수발주 인트라넷" style="width:100%;display:grid;grid-template-columns:26px minmax(0,1fr);gap:0 6px;text-align:left;padding:10px;border:0;border-radius:8px;background:#EFF6FF;color:#1D4ED8;min-height:44px">
                         <span style="font-size:12px;font-weight:700;line-height:1.9">01</span>
@@ -1207,7 +1207,7 @@
                     </span>
                   </li>
                 
-                  <li data-k="bidk" class="is-on">
+                  <li data-k="bidk">
                     <span class="sw-on">
                       <button type="button" aria-current="true" data-pick="bidk" title="입찰정보 솔루션" style="width:100%;display:grid;grid-template-columns:26px minmax(0,1fr);gap:0 6px;text-align:left;padding:10px;border:0;border-radius:8px;background:#EFF6FF;color:#1D4ED8;min-height:44px">
                         <span style="font-size:12px;font-weight:700;line-height:1.9">02</span>
@@ -1253,7 +1253,7 @@
         <nav aria-label="프로젝트 선택" style="width:100%;overflow-x:auto;margin:0 calc(-1 * clamp(16px,3vw,24px));padding:0 clamp(16px,3vw,24px) 4px">
           <ul style="list-style:none;margin:0;padding:0;display:flex;gap:8px;width:max-content">
             
-              <li data-k="veryflower">
+              <li data-k="veryflower" class="is-on">
                 <span class="sw-on">
                   <button type="button" aria-current="true" data-pick="veryflower" style="min-height:44px;padding:0 16px;border-radius:999px;border:1px solid #1D4ED8;background:#1D4ED8;color:#FFFFFF;font-size:14px;font-weight:600;white-space:nowrap;max-width:220px;overflow:hidden;text-overflow:ellipsis" title="수발주 인트라넷">수발주 인트라넷</button>
                 </span>
@@ -1262,7 +1262,7 @@
                 </span>
               </li>
             
-              <li data-k="bidk" class="is-on">
+              <li data-k="bidk">
                 <span class="sw-on">
                   <button type="button" aria-current="true" data-pick="bidk" style="min-height:44px;padding:0 16px;border-radius:999px;border:1px solid #1D4ED8;background:#1D4ED8;color:#FFFFFF;font-size:14px;font-weight:600;white-space:nowrap;max-width:220px;overflow:hidden;text-overflow:ellipsis" title="입찰정보 솔루션">입찰정보 솔루션</button>
                 </span>
@@ -1285,7 +1285,7 @@
       </span>
 
       <!-- 선택한 프로젝트 -->
-      <article data-panel="veryflower" data-device="desktop" class="panel" aria-labelledby="pf-sel-veryflower" style="flex:999 1 560px;min-width:0">
+      <article data-panel="veryflower" data-device="desktop" class="panel is-cur" aria-labelledby="pf-sel-veryflower" style="flex:999 1 560px;min-width:0">
         <p style="margin:0;font-size:13px;font-weight:700;letter-spacing:.04em;color:#1D4ED8">웹솔루션 · 01</p>
         <div style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:12px 16px;margin-top:6px">
           <div style="flex:1 1 280px;min-width:0">
@@ -1327,8 +1327,8 @@
             </div>
           </div>
           <span class="dv dv-desktop">
-            <div tabindex="0" aria-label="수발주 인트라넷 데스크톱 화면, 스크롤 가능" style="height:clamp(360px,42vw,600px);overflow-y:auto;background:#EFF6FF">
-              <img loading="lazy" src="images/veryflower-pc.webp" alt="수발주 인트라넷 데스크톱 전체 화면" style="display:block;width:100%">
+            <div tabindex="0" aria-label="수발주 인트라넷 데스크톱 화면, 스크롤 가능" style="aspect-ratio:4/3;height:auto;overflow-y:auto;background:#EFF6FF">
+              <img src="images/veryflower-pc.webp" alt="수발주 인트라넷 데스크톱 전체 화면" style="display:block;width:100%">
             </div>
           </span>
           
@@ -1336,7 +1336,7 @@
         </div>
         <p style="margin:10px 0 0;font-size:14px;color:#475569">미리보기 안을 스크롤하면 페이지 전체를 볼 수 있습니다.</p>
       </article>
-      <article data-panel="bidk" data-device="desktop" class="panel is-cur" aria-labelledby="pf-sel-bidk" style="flex:999 1 560px;min-width:0">
+      <article data-panel="bidk" data-device="desktop" class="panel" aria-labelledby="pf-sel-bidk" style="flex:999 1 560px;min-width:0">
         <p style="margin:0;font-size:13px;font-weight:700;letter-spacing:.04em;color:#1D4ED8">웹솔루션 · 02</p>
         <div style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:12px 16px;margin-top:6px">
           <div style="flex:1 1 280px;min-width:0">
@@ -1378,8 +1378,8 @@
             </div>
           </div>
           <span class="dv dv-desktop">
-            <div tabindex="0" aria-label="입찰정보 솔루션 데스크톱 화면, 스크롤 가능" style="height:clamp(360px,42vw,600px);overflow-y:auto;background:#EFF6FF">
-              <img src="images/bidk-pc.webp" alt="입찰정보 솔루션 데스크톱 전체 화면" style="display:block;width:100%">
+            <div tabindex="0" aria-label="입찰정보 솔루션 데스크톱 화면, 스크롤 가능" style="aspect-ratio:4/3;height:auto;overflow-y:auto;background:#EFF6FF">
+              <img loading="lazy" src="images/bidk-pc.webp" alt="입찰정보 솔루션 데스크톱 전체 화면" style="display:block;width:100%">
             </div>
           </span>
           
@@ -1438,7 +1438,7 @@
             </div>
           </div>
           <span class="dv dv-desktop">
-            <div tabindex="0" aria-label="명품잡화 쇼핑몰 데스크톱 화면, 스크롤 가능" style="height:clamp(360px,42vw,600px);overflow-y:auto;background:#EFF6FF">
+            <div tabindex="0" aria-label="명품잡화 쇼핑몰 데스크톱 화면, 스크롤 가능" style="aspect-ratio:4/3;height:auto;overflow-y:auto;background:#EFF6FF">
               <img loading="lazy" src="images/boutique-pc.webp" alt="명품잡화 쇼핑몰 데스크톱 전체 화면" style="display:block;width:100%">
             </div>
           </span>
