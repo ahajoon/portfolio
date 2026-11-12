@@ -1,4 +1,4 @@
-/* 든든한웹전문가 형준 포트폴리오 — 공통 스크립트 (바닐라 JS) */
+/* 든든한웹전문가 포트폴리오 — 공통 스크립트 (바닐라 JS) */
 (function () {
   'use strict';
   var $$ = function (sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); };
